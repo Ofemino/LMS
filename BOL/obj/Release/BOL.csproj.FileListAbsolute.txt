@@ -1,0 +1,10 @@
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\BOL.dll.config
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\BOL.dll
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\BOL.pdb
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\EntityFramework.dll
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\EntityFramework.SqlServer.dll
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\EntityFramework.xml
+C:\ENTRALOG APPLICATIONS\LMS\BOL\bin\Release\EntityFramework.SqlServer.xml
+C:\ENTRALOG APPLICATIONS\LMS\BOL\obj\Release\BOL.csprojResolveAssemblyReference.cache
+C:\ENTRALOG APPLICATIONS\LMS\BOL\obj\Release\BOL.dll
+C:\ENTRALOG APPLICATIONS\LMS\BOL\obj\Release\BOL.pdb

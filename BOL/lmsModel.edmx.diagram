@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efe50f48b4204bd2b611cc6f0f172014" Name="Diagram1">
+        <EntityTypeShape EntityType="lmsDbContext.AspNetRole" Width="1.5" PointX="5.75" PointY="2.5" />
+        <EntityTypeShape EntityType="lmsDbContext.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="3.625" />
+        <EntityTypeShape EntityType="lmsDbContext.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="1" />
+        <EntityTypeShape EntityType="lmsDbContext.AspNetUser" Width="1.5" PointX="8" PointY="1.375" />
+        <EntityTypeShape EntityType="lmsDbContext.Booking" Width="1.5" PointX="7.75" PointY="11.75" />
+        <EntityTypeShape EntityType="lmsDbContext.BookingMachinery" Width="1.5" PointX="9.75" PointY="11.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Cargo_Location" Width="1.5" PointX="11.75" PointY="11.75" />
+        <EntityTypeShape EntityType="lmsDbContext.CargoDestination" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Consignment" Width="1.5" PointX="12.75" PointY="4.75" />
+        <EntityTypeShape EntityType="lmsDbContext.ConsignmentEvacuation" Width="1.5" PointX="13.75" PointY="11.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Customer" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="lmsDbContext.DailyPlantRequest" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Destination" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Equipments_Rate" Width="1.5" PointX="15.75" PointY="9.75" />
+        <EntityTypeShape EntityType="lmsDbContext.FreightRate" Width="1.5" PointX="9.75" PointY="15.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Handling_Equipment" Width="1.5" PointX="15.75" PointY="13.75" />
+        <EntityTypeShape EntityType="lmsDbContext.ItemApproval" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.LoadingPlan" Width="1.5" PointX="0.75" PointY="16.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Machine_Status" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Machinery_Registration" Width="1.5" PointX="2.75" PointY="16.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Manifest" Width="1.5" PointX="4.75" PointY="16.75" />
+        <EntityTypeShape EntityType="lmsDbContext.PersonTitle" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.PurchaseOrder" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="lmsDbContext.QuoteRequest" Width="1.5" PointX="5.25" PointY="9.5" />
+        <EntityTypeShape EntityType="lmsDbContext.SalesOrder" Width="1.5" PointX="3" PointY="3.125" />
+        <EntityTypeShape EntityType="lmsDbContext.Service_Request" Width="1.5" PointX="3" PointY="11.875" />
+        <EntityTypeShape EntityType="lmsDbContext.Status" Width="1.5" PointX="6.75" PointY="16.75" />
+        <EntityTypeShape EntityType="lmsDbContext.StorageBill" Width="1.5" PointX="11.75" PointY="16.75" />
+        <EntityTypeShape EntityType="lmsDbContext.StorageBillStatu" Width="1.5" PointX="17.75" PointY="7.75" />
+        <EntityTypeShape EntityType="lmsDbContext.sysdiagram" Width="1.5" PointX="17.75" PointY="10.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Transport_Equipment" Width="1.5" PointX="17.75" PointY="13.75" />
+        <EntityTypeShape EntityType="lmsDbContext.TruckBatch" Width="1.5" PointX="13.75" PointY="17.75" />
+        <EntityTypeShape EntityType="lmsDbContext.TruckRequest" Width="1.5" PointX="15.75" PointY="17.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Category" Width="1.5" PointX="17.75" PointY="17.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Make" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Manufacturer" Width="1.5" PointX="18.75" PointY="3.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Model" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Owner" Width="1.5" PointX="7.75" PointY="7" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Owner_Driver" Width="1.5" PointX="10" PointY="7.125" />
+        <EntityTypeShape EntityType="lmsDbContext.Vehicle_Registration" Width="1.5" PointX="19.75" PointY="7.75" />
+        <EntityTypeShape EntityType="lmsDbContext.VehiclesOnQueue" Width="1.5" PointX="19.75" PointY="14.75" />
+        <EntityTypeShape EntityType="lmsDbContext.VepMonitoring" Width="1.5" PointX="19.75" PointY="18.75" />
+        <EntityTypeShape EntityType="lmsDbContext.MailSetting" Width="1.5" PointX="20.75" PointY="0.75" />
+        <AssociationConnector Association="lmsDbContext.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="lmsDbContext.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="lmsDbContext.FK_QuoteRequest_Customer" />
+        <AssociationConnector Association="lmsDbContext.FK_SalesOrder_Customer" />
+        <AssociationConnector Association="lmsDbContext.FK_Service_Request_Service_Request" />
+        <AssociationConnector Association="lmsDbContext.FK_QuoteRequest_ServiceRequest" />
+        <AssociationConnector Association="lmsDbContext.FK_Vehicle_Owner_Driver_Vehicle_Owner" />
+        <AssociationConnector Association="lmsDbContext.AspNetUserRoles" />
+        <EntityTypeShape EntityType="lmsDbContext.VechicleCallUpRequest" Width="1.5" PointX="0.75" PointY="21.75" />
+        <EntityTypeShape EntityType="lmsDbContext.LoadingPlanTransporter" Width="1.5" PointX="21.375" PointY="3.75" />
+        <EntityTypeShape EntityType="lmsDbContext.TruckCallup" Width="1.5" PointX="3.375" PointY="22.75" />
+        <EntityTypeShape EntityType="lmsDbContext.OtherVehicleDetail" Width="1.5" PointX="22.375" PointY="7.75" />
+        <EntityTypeShape EntityType="lmsDbContext.VehicleEntryPermit" Width="1.5" PointX="22.375" PointY="10.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1AA83EE-037C-4308-B086-82DCA0590DF3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOL</RootNamespace>
+    <AssemblyName>BOL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AspNetRole.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaim.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogin.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookingMachinery.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CargoDestination.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_Location.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Consignment.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsignmentEvacuation.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPlantRequest.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Destination.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Equipments_Rate.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FreightRate.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Handling_Equipment.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemApproval.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="lmsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lmsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="lmsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="lmsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lmsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingPlan.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingPlanTransporter.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Machinery_Registration.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Machine_Status.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailSetting.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manifest.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherVehicleDetail.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonTitle.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteRequest.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrder.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Service_Request.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP1_GetPlantRequestWithPlantCount_Result.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetPlantRequestWithPlantCount_Result.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StorageBill.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StorageBillStatu.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Equipment.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TruckBatch.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TruckCallup.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TruckRequest.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VechicleCallUpRequest.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleEntryPermit.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehiclesOnQueue.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Category.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Make.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Manufacturer.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Model.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Owner.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Owner_Driver.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Registration.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VepMonitoring.cs">
+      <DependentUpon>lmsModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="lmsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>lmsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lmsModel.edmx.diagram">
+      <DependentUpon>lmsModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lmsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>lmsModel.edmx</DependentUpon>
+      <LastGenOutput>lmsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="lmsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>lmsModel.edmx</DependentUpon>
+      <LastGenOutput>lmsModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
